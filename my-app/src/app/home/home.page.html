@@ -1,0 +1,23 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"> Week4 ( Day One , Xp Ninja )</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <div class="card"> Liste de nos differents Utilisateurs </div>
+    <ion-list>
+      <ion-item *ngFor="let user of users">
+        <ion-card>
+          <ion-card-title> UserId : {{ user.userId }}</ion-card-title>
+          <ion-card-header> Id : {{ user.id }}</ion-card-header>
+          <ion-card-subtitle> Title : {{ user.title }}</ion-card-subtitle>
+          <ion-card-content>
+            {{ user.body   }}
+          </ion-card-content>
+        </ion-card>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
